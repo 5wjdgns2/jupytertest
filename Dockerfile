@@ -1,3 +1,5 @@
+FROM geunsam2/jupyter-r:v3
+
 USER root
 RUN pip install ipynb-py-convert
 
