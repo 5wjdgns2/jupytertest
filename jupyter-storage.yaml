@@ -1,32 +1,17 @@
-kind: PersistentVolume
 apiVersion: v1
+kind: PersistentVolume
 metadata:
   name: jupyter-pv-volume
   labels:
     type: local
-    app: jupyter-server
 spec:
-  storageClassName: manual
+  storageClassName: localvolumeprovisioner
   capacity:
-    storage: 5Gi
+    storage: 10Gi
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   hostPath:
     path: "/pv/jupyter-pv1"
----
-kind: PersistentVolumeClaim
-apiVersion: v1
-metadata:
-  name: jupyter-pv-volume
-  labels:
-    app: jupyter-server
-spec:
-  storageClassName: manual
-  accessModes:
-    - ReadWriteMany
-  resources:
-    requests:
-      storage: 5Gi
       
       
-      
+   
