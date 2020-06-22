@@ -21,7 +21,7 @@ spec:
           - containerPort: 8888
         volumeMounts:
           - name: storage-volume
-            mountPath: 
+            mountPath: /home/woori
       volumes: 
         - name: 
           emptyDir: {} 
