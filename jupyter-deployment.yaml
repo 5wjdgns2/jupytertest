@@ -25,4 +25,4 @@ spec:
       volumes: 
         - name: storage-volume 
           persistentVolumeClaim:
-            Name: jupyter-pv-volume
+            claimName: jupyter-pv-volume
