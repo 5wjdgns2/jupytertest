@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jupyter-server
+  name: jupyter
   labels:
-    app: jupyter-server
+    app: jupyter
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: jupyter-server
+      app: jupyter
   template:
     metadata:
       labels:
-        app: jupyter-server
+        app: jupyter
     spec:
       containers:
       - name: 5wjdgns21/jupyter
