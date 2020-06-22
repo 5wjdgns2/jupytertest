@@ -24,4 +24,5 @@ spec:
             mountPath: /home/woori
       volumes: 
         - name: storage-volume 
-          emptyDir: {} 
+          hostPath:
+            path: /data/woori
