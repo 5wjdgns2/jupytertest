@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jupyter
+  name: jupyter-server
   labels:
-    app: jupyter
+    app: jupyter-server
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: jupyter
+      app: jupyter-server
   template:
     metadata:
       labels:
-        app: jupyter
+        app: jupyter-server
     spec:
       containers:
-      - name: 5wjdgns21/jupyter
+      - name: jupyter-sv
         image: 192.168.0.230:30002/5wjdgns21/jupyter-test:v3
         ports:
           - containerPort: 8888
