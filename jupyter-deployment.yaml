@@ -20,9 +20,8 @@ spec:
         ports:
           - containerPort: 8888
         volumeMounts:
-          - name: 
+          - name: storage-volume
             mountPath: 
-      volumes:
+      volumes: 
         - name: 
-          hostPath:
-            path: 
+          emptyDir: {} 
