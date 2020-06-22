@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: jupyter-sv
-        image: 192.168.0.230:30002/5wjdgns21/jupyter-test:v3
+        image: 192.168.0.230:30002/jupyter-test:v3
         ports:
           - containerPort: 8888
         volumeMounts:
