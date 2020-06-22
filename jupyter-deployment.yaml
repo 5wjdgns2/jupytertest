@@ -19,10 +19,5 @@ spec:
         image: 192.168.0.230:30002/jupyter-test:v3
         ports:
           - containerPort: 8888
-        volumeMounts:
-          - name: storage-volume
-            mountPath: /home/woori
-      volumes: 
-        - name: storage-volume 
-          persistentVolume:
-          - name: jupyter-pv-volume
+       
+      
