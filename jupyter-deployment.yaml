@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 5wjdgns21/jupyter
+  labels:
+    app: 5wjdgns21/jupyter
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 5wjdgns21/jupyter
+  template:
+    metadata:
+      labels:
+        app: 5wjdgns21/jupyter
+    spec:
+      containers:
+      - name: 5wjdgns21/jupyter
+        image: 192.168.0.230:30002/5wjdgns21/jupyter-test:v3
+        ports:
+          - containerPort: 8888
+        volumeMounts:
+          - name: 
+            mountPath: 
+      volumes:
+        - name: 
+          hostPath:
+            path: 
